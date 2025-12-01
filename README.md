@@ -24,3 +24,4 @@ cd chalna-rs
 pip install maturin
 maturin develop
 👑 CreditsCore Architecture & Engineering: scxr-dev (R H A Ashan Imalka)Project Lead: Asagi 🇯🇵Powered By: Rust 🦀 & Python 🐍Copyright © 2025 scxr-dev (R H A Ashan Imalka). All Rights Reserved.
+# chalna-rs
