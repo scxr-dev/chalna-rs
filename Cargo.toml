@@ -1,0 +1,22 @@
+[package]
+name = "chalna-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["scxr-dev (R H A Ashan Imalka)"]
+description = "The oxidized engine for chalna-rs."
+
+[lib]
+name = "chalna_rs_backend"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+rayon = "1.8"       # For parallel processing in Rust
+blake3 = "1.5"      # The fastest cryptographic hashing (for caching)
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"     # Ultra-fast binary serialization
+memmap2 = "0.9"     # For memory-mapping huge files (Ghost List)
+chacha20poly1305 = "0.10" # FEATURE: Military-grade encryption
+rand = "0.8"        # FEATURE: Secure random number generation
+base64 = "0.21"     # FEATURE: Encoding keys
+parking_lot = "0.12" # FEATURE: Faster Mutex locks than std
